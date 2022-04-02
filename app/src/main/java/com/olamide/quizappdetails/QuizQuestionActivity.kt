@@ -1,5 +1,6 @@
 package com.olamide.quizappdetails
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
@@ -9,6 +10,7 @@ import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.core.content.ContextCompat
+import org.w3c.dom.Text
 
 class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -60,21 +62,22 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+    @SuppressLint("SetTextI18n")
     private fun setQuestion() {
         defaultOptionsView()
         val question: Question = mQuestionsList!![mCurrentPosition - 1]
         ivImage?.setImageResource(question.image)
         progressBar?.progress = mCurrentPosition
-        tvProgress?.text = "${mCurrentPosition}/${progressBar?.max}"
+        tvProgress?.text = "Question ${mCurrentPosition} of ${progressBar?.max}"
         tvQuestion?.text = question.questions
         tvOptionOne?.text = question.optionOne
         tvOptionTwo?.text = question.optionTwo
         tvOptionThree?.text = question.optionThree
 
         if (mCurrentPosition == mQuestionsList!!.size) {
-            btnSubmit?.text = "FINISH"
+            btnSubmit?.text = "Finish"
         } else {
-            btnSubmit?.text = "SUBMIT"
+            btnSubmit?.text = "Submit"
         }
 
 
@@ -95,8 +98,8 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         for (option in options) {
-            option.setTextColor(Color.parseColor("#007047"))
-            option.typeface = Typeface.DEFAULT
+            option.setTextColor(Color.parseColor("#6c757d"))
+            option.typeface = Typeface.DEFAULT_BOLD
             option.background = ContextCompat.getDrawable(
                 this,
                 R.drawable.default_option_border_bg
@@ -113,7 +116,7 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
 
         mSelectedOptionPosition = selectedOptionNum
 
-        tv.setTextColor(Color.parseColor("#363A43"))
+        tv.setTextColor(Color.parseColor("#FFFFFF"))
         tv.setTypeface(tv.typeface, Typeface.BOLD)
         tv.background = ContextCompat.getDrawable(
             this,
@@ -124,6 +127,7 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
 
     // Individual options selected will have this border color/stroke
 
+    @SuppressLint("SetTextI18n")
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.tvOptionOne -> {
@@ -146,6 +150,8 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
 
             // When the submit button is clicked, the right and wrong answer color displays
             R.id.btnSubmit -> {
+
+
                 if(mSelectedOptionPosition == 0) {
                     mCurrentPosition++
 
@@ -169,7 +175,12 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
                     }else {
                         mCorrectAnswers++
                     }
-                    answerView(question.correctAnswer, R.drawable.correct_option_border_bg)
+                    answerView(question.correctAnswer, R.drawable.correct_option_border_bg,)
+
+                    tvOptionOne?.setTextColor(Color.parseColor("#dee2e6"))
+                    tvOptionTwo?.setTextColor(Color.parseColor("#dee2e6"))
+                    tvOptionThree?.setTextColor(Color.parseColor("#dee2e6"))
+
 
                     if (mCurrentPosition == mQuestionsList!!.size){
                         btnSubmit?.text = "Finish"

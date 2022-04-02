@@ -15,13 +15,13 @@ class ResultActivity : AppCompatActivity() {
         val tvScore : TextView = findViewById(R.id.resultTvScore)
          val resultBtnFinish : Button = findViewById(R.id.resultBtnFinish)
 
-        tvName.text = intent.getStringExtra(Constants.USER_NAME)
+             tvName.text = intent.getStringExtra(Constants.USER_NAME)
 
         val totalQuestion = intent.getIntExtra(Constants.TOTAL_QUESTIONS, 0)
         val correctAnswers = intent.getIntExtra(Constants.CORRECT_ANSWERS, 0)
 
 
-        tvScore.text = "Your Score is $correctAnswers/$totalQuestion"
+        tvScore.text = "You Scored $correctAnswers out of $totalQuestion"
 
         resultBtnFinish.setOnClickListener{
             startActivity(Intent(this, MainActivity::class.java))

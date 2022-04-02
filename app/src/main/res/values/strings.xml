@@ -11,4 +11,6 @@
     <string name="submit">Submit</string>
     <string name="kyiv">Kyiv</string>
     <string name="_0_9">0/9</string>
+    <string name="question_0_9">Question 0 / 9</string>
+    <string name="do_you_feel_confident">Do you feel confident? You can always challenge yourself to do better and get better with our ever growing questions.</string>
 </resources>

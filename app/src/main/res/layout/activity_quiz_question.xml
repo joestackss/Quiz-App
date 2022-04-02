@@ -7,6 +7,7 @@
     android:fillViewport="true"
     tools:context=".QuizQuestionActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,35 +15,31 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <TextView
-            android:id="@+id/tvQuestion"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
-            android:text="@string/which_city_in_ukraine_has_the_biggest_port"
-            android:textColor="@color/black"
-            android:textSize="22sp">
+            android:orientation="vertical"
 
-        </TextView>
+            >
 
-        <ImageView
-            android:id="@+id/ivImage"
-            android:layout_width="wrap_content"
-            android:layout_height="180dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/quiz_image"
-            tools:src="@drawable/port">
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingBottom="10dp"
+                android:text="@string/question_0_9"
+                android:textSize="17sp" />
 
-        </ImageView>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp">
 
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -52,31 +49,53 @@
                 android:layout_weight="1"
                 android:max="9"
                 android:indeterminate="false"
-                android:minHeight="50dp"
-                android:progress="5"/>
+                android:minHeight="2dp"
+                android:progress="5"
 
-            <TextView
-                android:id="@+id/tvProgress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:gravity="center"
-                android:padding="15dp"
-                android:text="@string/_0_9"
-                android:textSize="14sp" />
+                android:background="#f8f9fa"
+                />
 
 
         </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:contentDescription="@string/quiz_image"
+            tools:src="@drawable/port"
+            android:padding="20dp"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/which_city_in_ukraine_has_the_biggest_port"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:paddingTop="10dp">
+
+        </TextView>
+
 
         <TextView
             android:id="@+id/tvOptionOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/default_option_border_bg"
             android:fontFamily="@font/poppins_regular"
             android:gravity="center"
-            android:padding="15dp"
+            android:padding="13dp"
             android:text="@string/kyiv"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -85,11 +104,14 @@
             android:id="@+id/tvOptionTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/default_option_border_bg"
             android:fontFamily="@font/poppins_regular"
             android:gravity="center"
-            android:padding="15dp"
+            android:padding="13dp"
             android:text="@string/mariopol"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -98,11 +120,14 @@
             android:id="@+id/tvOptionThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/default_option_border_bg"
             android:fontFamily="@font/poppins_regular"
             android:gravity="center"
-            android:padding="15dp"
+            android:padding="13dp"
             android:text="@string/lyiv"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -112,12 +137,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@color/design_default_color_primary"
+            android:background="@drawable/botton_option_border_bg"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/submit"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
 
 
 
