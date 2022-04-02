@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Quiz App Details</string>
+    <string name="enter_your_name">Enter your name.....</string>
+    <string name="get_started">Get started</string>
+    <string name="welcome_to_learnen">Welcome to Learnen</string>
+    <string name="improve_your_skills_for_a_brighter_future">Improve your skills for a brighter future.</string>
+    <string name="quiz_image">Quiz Image</string>
+    <string name="which_city_in_ukraine_has_the_biggest_port">Which city in Ukraine has the biggest port?</string>
+    <string name="mariopol">Mariopol</string>
+    <string name="lyiv">Lyiv</string>
+    <string name="submit">Submit</string>
+    <string name="kyiv">Kyiv</string>
+    <string name="_0_9">0/9</string>
+</resources>

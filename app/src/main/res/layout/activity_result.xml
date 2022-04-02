@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/resultHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:id="@+id/resultTvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You scored 3 out of 9"
+        android:textSize="22sp"
+        />
+
+    <Button
+        android:id="@+id/resultBtnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        />
+
+</LinearLayout>
