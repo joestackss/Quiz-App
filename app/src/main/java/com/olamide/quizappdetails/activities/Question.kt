@@ -1,4 +1,4 @@
-package com.olamide.quizappdetails
+package com.olamide.quizappdetails.activities
 
 data class Question(
     val id: Int,

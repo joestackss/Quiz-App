@@ -1,5 +1,7 @@
 package com.olamide.quizappdetails
 
+import com.olamide.quizappdetails.activities.Question
+
 object Constants {
 
     const val USER_NAME : String = "user_name"

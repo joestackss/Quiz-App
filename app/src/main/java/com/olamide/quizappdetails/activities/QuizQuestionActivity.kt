@@ -1,4 +1,4 @@
-package com.olamide.quizappdetails
+package com.olamide.quizappdetails.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,11 +6,11 @@ import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.core.content.ContextCompat
-import org.w3c.dom.Text
+import com.olamide.quizappdetails.Constants
+import com.olamide.quizappdetails.R
 
 class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
 

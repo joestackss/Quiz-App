@@ -1,10 +1,12 @@
-package com.olamide.quizappdetails
+package com.olamide.quizappdetails.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.olamide.quizappdetails.Constants
+import com.olamide.quizappdetails.R
 
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

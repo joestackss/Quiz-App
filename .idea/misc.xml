@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/drawable-v24/botton_option_border_bg.xml" value="0.231" />
+        <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/drawable-v24/button_round_edges_stroke.xml" value="0.1275" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/drawable-v24/finish_button_option_border_bg.xml" value="0.231" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/drawable-v24/shape_button_rounded.xml" value="0.1275" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/drawable/correct_option_border_bg.xml" value="0.105" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/drawable/default_option_border_bg.xml" value="0.1515" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/drawable/ic_launcher_background.xml" value="0.234" />
@@ -15,10 +17,12 @@
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/font/my_font.xml" value="0.2568947906026558" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/font/my_fonts.xml" value="0.1" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/font/poppins_font_family.xml" value="0.1" />
+        <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/font/poppins_medium.xml" value="0.2361111111111111" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/font/pops.xml" value="0.1" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/layout/activity_quiz_question.xml" value="0.264" />
         <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/layout/activity_result.xml" value="0.264" />
+        <entry key="..\:/Users/Olamide/AndroidStudioProjects/QuizAppDetails/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
       </map>
     </option>
   </component>
