@@ -11,4 +11,8 @@
     <color name="deep_blue">#3A6BEA</color>
     <color name="colorAccent">#0C90F1</color>
     <color name="gray">#6C757D</color>
+
+
+    <!--TODO (Step 8: Add all the color values here.)-->
+    <color name="snackbar_error_color">#F72400</color>
 </resources>
